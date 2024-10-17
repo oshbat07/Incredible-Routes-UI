@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function User() {
+export default function Blogs() {
   return (
     <h1>
-      USER COMPONENT
+      Blogs COMPONENT
     </h1>
   )
 }

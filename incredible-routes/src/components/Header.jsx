@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 
-const pages = ['Home', 'About', 'User'];
+const pages = ['Home', 'About', 'Blogs'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 function Header() {
   const [anchorElNav, setAnchorElNav] = useState(null);
@@ -33,7 +33,7 @@ function Header() {
     setAnchorElUser(null);
   };
   return (
-      <AppBar position="static">
+      <AppBar position="fixed" color="secondary">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography
@@ -51,7 +51,7 @@ function Header() {
                 textDecoration: 'none',
               }}
             >
-              LOGO
+             Wanderly
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

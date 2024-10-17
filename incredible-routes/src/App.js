@@ -1,8 +1,8 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import About from "./components/About";
-import User from "./components/User";
-import Home from './components/Home'
+import About from "./pages/About";
+import Blogs from "./pages/Blogs";
+import Home from './pages/Home'
 import Header from './components/Header'
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <Route path="/" element={<Header />}>
         <Route index path="home" element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="user" element={<User />} />
+          <Route path="blogs" element={<Blogs />} />
         </Route>
       </Routes>
     </BrowserRouter>
